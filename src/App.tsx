@@ -1,5 +1,5 @@
 import './App.css'
-import { MemoryRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
 import { Suspense, lazy } from 'react'
 
@@ -13,15 +13,15 @@ export default function App() {
   return (
     <>
       <Suspense fallback={<h1>Loading...</h1>}>
-        <MemoryRouter>
+        <BrowserRouter>
           <Routes>
-            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/" element={<Home />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
-        </MemoryRouter>
+        </BrowserRouter>
 
       </Suspense>
     </>
