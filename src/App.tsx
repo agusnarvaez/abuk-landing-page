@@ -16,7 +16,7 @@ export default function App() {
       <>
         <Header theme={selectTheme()} path={path}  />
         <Outlet  />
-        <Footer />
+        <Footer theme={selectTheme()} />
       </>
     )
   }
