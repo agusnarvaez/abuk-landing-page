@@ -11,7 +11,7 @@ describe('Home Component', () => {
   })
 
   test('Home renders', () => {
-    expect(screen.getByText('Home')).toBeDefined()
+    expect(screen.getByText('ABUK')).toBeDefined()
   })
 
 })
