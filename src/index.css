@@ -24,6 +24,10 @@
     margin: 0;
     padding: 0;
 }
+#root{
+    height: 100%;
+}
+
 h1,h2{
     font-family: var(--primary-font);
 }
@@ -41,11 +45,11 @@ body{
 }
 
 main{
-    min-height: 80vh;
+    /* min-height: 80vh; */
     position: relative;
     display: flex;
     align-items: stretch;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 main section{
     width: 100%;
@@ -79,7 +83,7 @@ address{
 
 a{
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: font-weight  0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -93,7 +97,9 @@ a:hover{
     justify-content: center;
 }
 
-
+ul{
+    list-style: none;
+}
 
 
 /* Estilos específicos para el modo oscuro */
