@@ -1,0 +1,106 @@
+.main-footer{
+    width: 100%;
+    flex-direction: column;
+    padding: 5%;
+    gap: 3.5rem;
+}
+.main-footer h2{
+    width: 100%;
+    font-size: 6rem;
+    font-weight: 900;
+    opacity: 0.7;
+}
+
+.main-footer nav{
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-footer nav ul{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.1rem
+}
+.main-footer nav ul li a{
+    font-size: 1.5rem;
+}
+
+.main-footer .footer-socials{
+    width: 100%;
+    gap: 3rem;
+    justify-content: flex-start;
+}
+.main-footer .footer-socials a{
+    font-size: 3.8rem;
+}
+
+.main-footer .bapps-logo{
+    width: 100%;
+}
+
+.main-footer .bapps-logo img{
+    width: 7rem;
+    color: var(--green-abuk);
+}
+
+@media (min-width: 530px) {
+    .main-footer h2{
+        font-size: 6.5rem;
+    }
+
+    .main-footer nav ul li a{
+        font-size: 2rem;
+    }
+
+    .main-footer .footer-socials a{
+        font-size: 4rem;
+    }
+
+    .main-footer .bapps-logo img{
+        width: 8rem;
+    }
+}
+
+@media (min-width: 930px) {
+    footer.main-footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .main-footer h2{
+        display: none;
+    }
+
+    .main-footer nav,
+    .main-footer .footer-socials{
+        width: 45%;
+    }
+    .main-footer nav a{
+        font-size: 2rem;
+    }
+    .main-footer .footer-socials{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .main-footer .footer-socials a{
+        font-size: 5.8rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .main-footer ul.footer-socials li a:hover{
+        opacity: 0.7;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+    .main-footer ul.footer-socials li a:active{
+        transform: scale(0.9);
+    }
+
+    .main-footer .bapps-logo{
+        justify-content: flex-end;
+    }
+    .main-footer .bapps-logo img{
+        width: 9rem;
+    }
+}
