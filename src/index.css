@@ -51,6 +51,11 @@ body{
     min-height: 88vh;
     flex-direction: column;
 }
+.dark-theme ,
+.dark-theme > a{
+    background-color: var(--black-abuk);
+    color: var(--grey-abuk);
+}
 main section{
     width: 100%;
     display: flex;

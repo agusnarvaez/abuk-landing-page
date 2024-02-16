@@ -27,7 +27,7 @@ export default function Header({theme,path}:HeaderProps) {
 
   return (
     <header data-testid='main-header' className={`main-header flex-box ${theme} ${isHome()}`}>
-      <main className='flex-box'>
+      <main className={`flex-box ${theme}`}>
         <Link data-testid='page-title' onClick={closeHeader} to='/'>ABUK</Link>
         <button
           data-testid='burger-button'

@@ -22,12 +22,7 @@
     background-color: var(--grey-abuk);
     color: var(--green-abuk);
 }
-.main-header.dark-theme main,
-.main-header.dark-theme > main a{
-    background-color: var(--black-abuk);
-    color: var(--grey-abuk);
 
-}
 .main-header.show-title main > a{
     display: block;
 }
