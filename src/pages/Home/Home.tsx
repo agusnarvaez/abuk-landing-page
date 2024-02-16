@@ -1,9 +1,9 @@
-
+import './home.css'
 
 export default function Home() {
   return (
-    <>
-      <h2>ABUK</h2>
-    </>
+    <main className="page-container home-page">
+      <h1>ABUK</h1>
+    </main>
   )
 }

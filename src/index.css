@@ -44,12 +44,12 @@ body{
     overflow-x: hidden;
 }
 
-main{
-    /* min-height: 80vh; */
-    position: relative;
-    display: flex;
+.page-container{
+    position:relative;
     align-items: stretch;
-    /* flex-direction: column; */
+    display: flex;
+    min-height: 88vh;
+    flex-direction: column;
 }
 main section{
     width: 100%;

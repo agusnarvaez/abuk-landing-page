@@ -1,0 +1,12 @@
+.home-page{
+    background-color: var(--grey-abuk);
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page h1{
+    font-size: 15rem;
+    font-weight: 900;
+    color: var(--green-abuk);
+    opacity: 0.7;
+}
