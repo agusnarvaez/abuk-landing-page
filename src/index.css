@@ -52,9 +52,13 @@ body{
     flex-direction: column;
 }
 .dark-theme ,
-.dark-theme > a{
+.dark-theme *{
     background-color: var(--black-abuk);
     color: var(--grey-abuk);
+}
+.light-theme ,
+.light-theme *{
+    color: var(--green-abuk);
 }
 main section{
     width: 100%;
