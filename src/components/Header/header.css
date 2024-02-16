@@ -1,0 +1,179 @@
+.main-header{
+    width: 100%;
+    height: 12vh;
+    position:sticky;
+    top: 0;
+}
+.main-header.show-title main{
+    justify-content: space-between;
+}
+
+.main-header main{
+    z-index: 1000;
+    width:100%;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 0 5%;
+}
+.main-header,
+.main-header *{
+    background-color: var(--grey-abuk);
+    color: var(--green-abuk);
+}
+.main-header.dark-theme main,
+.main-header.dark-theme > main a{
+    background-color: var(--black-abuk);
+    color: var(--grey-abuk);
+
+}
+.main-header.show-title main > a{
+    display: block;
+}
+.main-header main > a{
+    width: 50%;
+    display: none;
+    font-size: 4rem;
+    font-family: var(--primary-font);
+    font-weight: 900;
+}
+.main-header main > a:hover{
+    text-decoration: none;
+}
+
+
+.main-header .burguer-button{
+    width: 2.5rem;
+    height: 1.7rem;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.main-header .burguer-button:hover{
+    transform: scale(1.1);
+}
+
+
+.main-header .burguer-button div,
+.main-header .burguer-button::after,
+.main-header .burguer-button::before{
+    width: 100%;
+    height: 1px;
+    border-radius: 50rem;
+    position: absolute;
+    left: 50%;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+    top:50%;
+    background-color: var(--primary-color);
+}
+.main-header.dark-theme .burguer-button div,
+.main-header.dark-theme .burguer-button::after,
+.main-header.dark-theme .burguer-button::before{
+    background-color: var(--grey-abuk);
+}
+
+
+.main-header .burguer-button div{
+    top: 50%;
+    left: 50%;
+}
+.main-header .burguer-button::after{
+    content: '';
+    display: block;
+    top: 0;
+}
+
+.main-header .burguer-button::before{
+    content: '';
+    display: block;
+    top: 100%;
+}
+.main-header .burguer-button.show  div{
+    opacity: 0;
+}
+
+.main-header  .burguer-button.show::after,
+.main-header .burguer-button.show::before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg) ;
+}
+.main-header .burguer-button.show::before{
+    transform: translate(-50%, -50%) rotate(-45deg) ;
+}
+
+.main-header nav{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: -100vh;
+    transition: top 0.3s ease-in-out;
+    z-index: 999;
+}
+.main-header nav.show{
+    top: 12vh;
+}
+
+.main-header nav ul{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5%;
+    gap: 3rem;
+}
+
+.main-header nav ul li a{
+    font-size: 3.8rem;
+}
+
+.main-header nav ul li a.active{
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+@media (min-width: 530px) {
+    .main-header nav ul li a{
+        font-size: 4.5rem;
+    }
+    .main-header .burguer-button{
+        width: 3rem;
+        height: 2rem;
+    }
+}
+
+@media (min-width: 940px) {
+    .main-header {
+        padding: 2%;
+    }
+    .main-header.dark-theme,
+    .main-header.dark-theme *{
+        background-color: var(--black-abuk);
+        color: var(--grey-abuk);
+    }
+    .main-header main{
+        width: 20%;
+        padding: 0;
+    }
+    .main-header main .burguer-button{
+        display: none;
+    }
+    .main-header nav{
+        position: relative;
+        top: auto;
+        height: 100%;
+        width: 80%;
+    }
+    .main-header nav ul{
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .main-header nav ul li a{
+        font-size: 1.5rem;
+    }
+
+}
