@@ -1,6 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import ServiceCard from './ServiceCard'
-import { MemoryRouter } from 'react-router-dom'
 describe('ServiceCard Component', () => {
   const data = [
     {
@@ -17,9 +16,7 @@ describe('ServiceCard Component', () => {
     // Limpiar localStorage antes de cada prueba
     localStorage.clear()
     render(
-      <MemoryRouter>
         <ServiceCard title={title} data={data}  />
-      </MemoryRouter>
     )
   })
 
