@@ -3,10 +3,136 @@
     justify-content: center;
     align-items: center;
 }
-
-.home-page h1{
-    font-size: 15rem;
+.home-page h2{
+    width: 100%;
+    height: 10rem;
+}
+.home-page h2 *{
+    font-size: 10rem;
+    width: 7rem;
+    line-height: 10rem;
     font-weight: 900;
     color: var(--green-abuk);
-    opacity: 0.7;
+    transform: translateX(-50%);
 }
+
+
+@keyframes appear-letter {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* Define una animación para cada letra que la mueva a su lugar final */
+@keyframes move-letter-A {
+    to {
+        transform: translateX(-200%);
+        opacity: 0.7;
+    }
+}
+
+@keyframes move-letter-B {
+    to {
+        transform: translateX(-100%);
+        opacity: 0.7;
+    }
+}
+
+@keyframes move-letter-U {
+    to {
+        transform: translateX(0%);
+        opacity: 0.7;
+    }
+}
+
+@keyframes move-letter-K {
+    to {
+        transform: translateX(100%);
+        opacity: 0.7;
+    }
+}
+
+h2 {
+    position: relative;
+}
+.letter {
+    width: 11rem;
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    background-color: var(--grey-abuk);
+    animation: appear-letter 1s forwards;
+}
+/* Animaciones individuales para las letras */
+.letter-A {
+    animation-delay: 0s,4s;
+    animation-name: appear-letter, move-letter-A;
+}
+
+  .letter-B {
+    animation-delay: 1s,4s;
+    animation-name: appear-letter, move-letter-B;
+  }
+
+  .letter-U {
+    animation-delay: 2s,4s;
+    animation-name: appear-letter, move-letter-U;
+  }
+
+  .letter-K {
+    animation-delay: 3s,4s;
+    animation-name: appear-letter, move-letter-K;
+  }
+
+  /* Ajustar los tiempos para cuando comienzan las animaciones de movimiento */
+.letter-A, .letter-B, .letter-U, .letter-K {
+    animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+}
+
+  @media (min-width: 540px){
+    .home-page h2{
+        height: 20rem;
+    }
+    .home-page h2 *{
+        font-size: 20rem;
+        width: 14rem;
+        line-height: 20rem;
+    }
+    .letter {
+        width: 22rem;
+    }
+  }
+
+    @media (min-width: 790px){
+        .home-page h2{
+            height: 30rem;
+        }
+        .home-page h2 *{
+            font-size: 30rem;
+            width: 21rem;
+            line-height: 30rem;
+        }
+        .letter {
+            width: 33rem;
+        }
+    }
+
+    @media (min-width: 1024px){
+        .home-page h2{
+            height: 40rem;
+        }
+        .home-page h2 *{
+            font-size: 40rem;
+            width: 28rem;
+            line-height: 40rem;
+        }
+        .letter {
+            width: 44rem;
+        }
+    }
