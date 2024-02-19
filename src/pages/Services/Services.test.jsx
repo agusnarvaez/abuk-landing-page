@@ -1,12 +1,15 @@
 import { render, screen } from '@testing-library/react'
 import Services from './Services'
+import { MemoryRouter } from 'react-router-dom'
 
 describe('Services Component', () => {
   beforeEach(() => {
     // Limpiar localStorage antes de cada prueba
     localStorage.clear()
     render(
-      <Services />
+      <MemoryRouter>
+        <Services />
+      </MemoryRouter>
     )
   })
 
