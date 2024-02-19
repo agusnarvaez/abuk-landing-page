@@ -25,7 +25,7 @@
     padding: 0;
 }
 #root{
-    height: 100%;
+    min-height: 100%;
 }
 
 h1,h2{
@@ -86,7 +86,7 @@ address{
     font-weight: 400;
 }
 .bold{
-    font-weight: 600;
+    font-weight: 700;
     font-size: inherit;
 }
 
