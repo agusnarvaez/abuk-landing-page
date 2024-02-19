@@ -11,7 +11,7 @@ describe('Services Component', () => {
   })
 
   test('should render Services component', () => {
-    expect(screen.getByText('Services')).toBeDefined()
+    expect(screen.getAllByText('Mix & Mastering')).toBeDefined()
   })
 
 

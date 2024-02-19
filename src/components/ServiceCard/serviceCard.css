@@ -1,0 +1,89 @@
+.service-card{
+    width: 100%;
+    background-color: var(--black-abuk);
+    border: 1px solid var(--grey-abuk);
+    border-radius: 1rem;
+    color: var(--grey-abuk);
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.service-card header{
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.service-card header h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.service-card header button{
+    border: 1px solid var(--grey-abuk);
+    border-radius: 5rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+.service-card header > button > div,
+.service-card header > button > div::after{
+    content: '';
+    width: 1.3rem;
+    height: 0.2rem;
+    background-color: var(--black-abuk);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    border-radius: 1px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.service-card header > button > div{
+    transform: translate(-50%, -50%);
+}
+.service-card.show header > button{
+    background-color: var(--black-abuk);
+}
+.service-card.show header > button > div{
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: var(--grey-abuk);
+}
+
+.service-card.show header > button > div::after{
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: var(--grey-abuk);
+}
+
+.service-card main{
+    width: 100%;
+    min-height: 0;
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.service-card main *{
+    font-size: 1.5rem;
+}
+
+.service-card.show main{
+    max-height: 100vh;
+    padding: 2rem;
+}
+
+.service-card.show{
+    background-color: var(--grey-abuk);
+    color: var(--black-abuk);
+}
+
+.service-card main li{
+    justify-content: space-between;
+}
+
+@media (min-width: 1000px){
+    .service-card:hover{
+        transform: scale(1.03);
+    }
+}

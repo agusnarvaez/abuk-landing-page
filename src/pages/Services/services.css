@@ -1,0 +1,144 @@
+.services-page .prices{
+    width: 100%;
+    background-color: var(--black-abuk);
+    padding: 5% 2.5rem 10% 2.5rem;
+    gap: 2.5rem;
+}
+
+.services-page .prices h1{
+    color: var(--grey-abuk);
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 4.1rem;
+}
+
+.services-page .prices ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.services-page .prices ul li{
+    width: 100%;
+}
+
+.services-page .preparation{
+    width: 100%;
+    flex-direction: column;
+    padding: 4rem 2.5rem;
+    gap: 3rem;
+}
+.services-page .preparation img{
+    width: 90%;
+    object-fit: cover;
+    object-position: right;
+    height: 60vh;
+    align-self: flex-end;
+}
+.services-page .preparation .info{
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+.services-page .preparation .info h2{
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 3.5rem;
+    text-align: start;
+    color: var(--green-abuk);
+}
+.services-page .preparation .info ul{
+    list-style: disc;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--black-abuk);
+    font-weight: 500;
+    padding: 0 1.5rem ;
+}
+
+.services-page .preparation .info .contact-button{
+    align-self: flex-start;
+    padding: 1.2rem 5rem;
+    border-radius: 50rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--green-abuk);
+    border: 1px solid var(--green-abuk);
+    background-color: var(--grey-abuks);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+.services-page .preparation .info .contact-button:active{
+    transform: scale(0.95);
+    text-decoration: none;
+}
+
+@media (min-width: 600px){
+    .services-page .prices{
+        gap: 0rem;
+        justify-content: space-between;
+    }
+    .services-page .prices h1{
+        width: 40%;
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    .services-page .prices > ul{
+        width: 55%;
+    }
+
+    .services-page .preparation{
+        flex-direction: row-reverse;
+    }
+    .services-page .preparation img{
+        width: 40%;
+        height: 50vh;
+    }
+    .services-page .preparation .info{
+        width: 55%;
+        gap: 3.5rem;
+    }
+    .services-page .preparation .info h2{
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    .services-page .preparation .info ul{
+        font-size: 1.7rem;
+    }
+    .services-page .preparation .info .contact-button{
+        border-width: 2px;
+    }
+}
+
+@media (min-width: 1023px){
+    .services-page .prices{
+        padding: 5% 5rem 10% 5rem;
+    }
+    .services-page .prices h1{
+        font-size: 7rem;
+        line-height: 6rem;
+    }
+
+    .services-page .preparation img{
+        height: 60vh;
+    }
+    .services-page .preparation .info h2{
+        font-size: 7rem;
+        line-height: 6rem;
+    }
+    .services-page .preparation .info .contact-button{
+        cursor: pointer;
+    }
+    .services-page .preparation .info .contact-button:hover{
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+
+}
+
