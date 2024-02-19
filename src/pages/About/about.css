@@ -1,0 +1,81 @@
+.about-page{
+    background-color: var(--black-abuk);
+    padding: 5% 2.5rem;
+    width: 100%;
+    gap: 2.5rem;
+    color: var(--grey-abuk);
+}
+
+.about-page .banner{
+    height: clamp(40vh,461px,60vh);
+    position: relative;
+    align-items: flex-end;
+}
+
+.about-page .banner img{
+    height: 100%;
+    width: clamp(225px, 325px,85%);
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.about-page .banner h2{
+    width: 100%;
+    text-align: start;
+    font-size: 10rem;
+    font-weight: 900;
+    z-index: 100;
+}
+
+.about-page .info{
+    gap: 2.5rem;
+}
+.about-page .info p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (min-width: 790px){
+
+    .about-page{
+        flex-direction: row;
+        align-items: stretch;
+        padding: 3% 5rem;
+    }
+    .about-page .banner {
+        width: 45%;
+        height: auto;
+    }
+    .about-page .banner h2{
+        font-size: 11rem;
+        line-height: 7rem;
+        position: absolute;
+        top: 0%;
+        right: -70%;
+    }
+    .about-page .banner img{
+        left: 0;
+        width: clamp(300px, 616px, 95%);
+    }
+    .about-page .info{
+        width: 55%;
+        padding-top: 10rem;
+    }
+    .about-page .info p{
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1125px){
+    .about-page .banner h2{
+        font-size: 13rem;
+        line-height: 10rem;
+    }
+    .about-page .info{
+        padding-top: 12rem;
+    }
+    .about-page .info p{
+        font-size: 2.2rem;
+    }
+}

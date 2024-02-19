@@ -11,6 +11,6 @@ describe('About Component', () => {
   })
 
   test('should render About component', async () => {
-    expect(screen.getByText('About')).toBeDefined()
+    expect(screen.getByText('Abuk')).toBeDefined()
   })
 })
