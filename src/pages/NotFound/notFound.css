@@ -1,0 +1,62 @@
+.not-found-page{
+    gap: 3rem;
+    justify-content: center;
+    padding: 0 2.5rem;
+    align-items: start;
+    height: 100vh;
+}
+
+.not-found-page h1,
+.not-found-page h2{
+    width: 100%;
+    text-align: start;
+    font-size: 5rem;
+    line-height: 4rem;
+    font-weight: 900;
+    color: var(--green-abuk);
+}
+.not-found-page h2{
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+
+.not-found-page .primary-button{
+    text-align: center;
+}
+@media (min-width: 600px) {
+    .not-found-page{
+        flex-wrap: wrap;
+    }
+    .not-found-page h1{
+        order: 0;
+        width: 45%;
+        font-size: 7rem;
+        line-height: 6rem;
+    }
+    .not-found-page h2{
+        height: 100%;
+        width: 45%;
+        order: 2;
+        font-size: 4rem;
+        line-height: 3rem;
+        display: flex;
+        align-items: center;
+    }
+    .not-found-page .primary-button{
+        order: 1;
+        padding: 1rem 4rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .not-found-page h1{
+        font-size: 10rem;
+        line-height: 9rem;
+    }
+
+    .not-found-page .primary-button{
+        padding: 1.5rem 5rem;
+    }
+}

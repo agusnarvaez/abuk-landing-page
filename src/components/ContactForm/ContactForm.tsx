@@ -63,7 +63,7 @@ export default function ContactForm() {
         </li>
       </ul>
 
-      <button type="submit" value="Enviar" >Enviar</button>
+      <button className='primary-button' type="submit" value="Enviar" >Enviar</button>
     </form>
   )
 }

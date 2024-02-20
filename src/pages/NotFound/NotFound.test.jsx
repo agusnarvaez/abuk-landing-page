@@ -1,16 +1,19 @@
 import { render, screen } from '@testing-library/react'
 import NotFound from './NotFound'
+import { MemoryRouter } from 'react-router-dom'
 
 describe('NotFound Component', () => {
   beforeEach(() => {
     // Limpiar localStorage antes de cada prueba
     localStorage.clear()
     render(
-      <NotFound />
+      <MemoryRouter>
+        <NotFound />
+      </MemoryRouter>
     )
   })
   test('should render NotFOund component', async () => {
-    expect(screen.getByText('404 NotFound')).toBeDefined()
+    expect(screen.getByText('SEEMS LIKE YOU GOT LOST')).toBeDefined()
   })
 
 

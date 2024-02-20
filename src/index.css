@@ -110,6 +110,21 @@ ul{
     list-style: none;
 }
 
+.primary-button{
+    width: auto;
+    padding: 1.2rem 5rem;
+    font-weight: 700;
+    border: 1px solid var(--green-abuk);
+    color: var(--green-abuk);
+    border-radius: 50rem;
+    cursor: pointer;
+    transition: transform,background-color 0.3s ease-in-out;
+}
+
+.primary-button:active{
+    transform: scale(0.9);
+}
+
 
 /* Estilos específicos para el modo oscuro */
 @media (prefers-color-scheme: dark) {
@@ -147,14 +162,20 @@ ul{
         font-size: 1.1rem;
     }
 
-
+    .primary-button{
+        font-size: 2rem;
+        padding: 1.2rem 8rem;
+    }
 
 }
 
 
 @media (min-width: 950px) {
 
-
+    .primary-button:hover{
+        background-color: var(--green-abuk);
+        color: var(--grey-abuk);
+    }
 }
 
 

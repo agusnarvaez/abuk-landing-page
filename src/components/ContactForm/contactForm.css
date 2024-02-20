@@ -50,7 +50,7 @@
     text-align: center;
 }
 
-.contact-form-container button{
+.contact-form-container .primary-button{
     width: auto;
     padding: 1.2rem 5rem;
     font-weight: 700;
@@ -61,7 +61,7 @@
     transition: transform,background-color 0.3s ease-in-out;
 }
 
-.contact-form-container button:active{
+.contact-form-container .primary-button:active{
     transform: scale(0.9);
 }
 
@@ -93,7 +93,7 @@
     .contact-form-container .inputs-container li textarea{
         height: 10rem;
     }
-    .contact-form-container button{
+    .contact-form-container .primary-button{
         font-size: 2rem;
         padding: 1.2rem 8rem;
     }
@@ -106,7 +106,7 @@
     .contact-form-container .inputs-container{
         row-gap: 5rem;
     }
-    .contact-form-container button:hover{
+    .contact-form-container .primary-button:hover{
         background-color: var(--green-abuk);
         color: var(--grey-abuk);
     }
