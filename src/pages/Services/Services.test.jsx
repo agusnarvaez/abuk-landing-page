@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import Services from './Services'
 import { MemoryRouter } from 'react-router-dom'
+import Services from './Services'
 
 describe('Services Component', () => {
   beforeEach(() => {

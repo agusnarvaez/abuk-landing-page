@@ -6,7 +6,7 @@ import './index.css'
 export default function App() {
   const path = useLocation().pathname
   const selectTheme = () => {
-    if (path === '/' || path === '/contact') {
+    if (path === '/' || path === '/contact' || path === '/lessons') {
       return 'light-theme'
     }else{
       return 'dark-theme'

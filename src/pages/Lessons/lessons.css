@@ -1,0 +1,221 @@
+.lessons-page{
+    gap: 2.5rem;
+}
+.lessons-page header.flex-box{
+    width: 100%;
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 2.5rem;
+}
+.lessons-page header h1{
+    width: 80%;
+    align-self: flex-start;
+    font-size: 5rem;
+    line-height: 3.5rem;
+    font-weight: 900;
+    color: var(--green-abuk);
+}
+.lessons-page header p{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.lessons-page .pills-list{
+    width: 100%;
+    flex-direction: column;
+}
+
+.lessons-page .pills-list ul{
+    list-style: none;
+    width: 300%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    transform: translateX(-2%);
+    animation: slideInFromRight 20s ease-in-out infinite;
+}
+
+.lessons-page .pills-list ul li{
+    border-radius: 50rem;
+    border: 1px solid var(--green-abuk);
+    padding: 2.5rem 4.6rem;
+    font-size: 1.5rem;
+}
+.lessons-page .pills-list ul .button-pill{
+    display: none;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(-2%);
+    }
+    50% {
+        transform: translateX(-40%);
+    }
+    100% {
+        transform: translateX(-2%);
+    }
+}
+
+.lessons-page .contact-button{
+    width: 23rem;
+    align-self: flex-end;
+    margin-right: 2.5rem;
+    height: 5.4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50rem;
+    background-color: var(--green-abuk);
+    color: var(--grey-abuk);
+    transition: background-color 0.5s ease-in-out;
+    position: relative;
+}
+
+.lessons-page .contact-button svg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.4rem;
+    height: 4.4rem;
+    width: 4.4rem;
+    padding: 3%;
+    border-radius: 30rem;
+    background-color: var(--grey-abuk);
+    font-size: 1rem;
+}
+.lessons-page .contact-button svg path{
+    fill: var(--green-abuk);
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (min-width: 500px) {
+
+    .lessons-page header h1{
+        font-size: 7rem;
+        line-height: 5rem;
+    }
+    .lessons-page header p{
+        font-size: 2rem;
+    }
+    .lessons-page .pills-list{
+        padding: 0 3%;
+    }
+    .lessons-page .pills-list ul{
+        width: 100%;
+        animation: none;
+        transform: translate(0);
+    }
+    .lessons-page .pills-list ul li{
+        padding: 2rem 3rem;
+        font-size: 1.8rem;
+    }
+    .lessons-page .pills-list ul .button-pill{
+        display: block;
+        border: none;
+        padding: 0;
+    }
+    .lessons-page .pills-list ul .button-pill .contact-button{
+        width: 27rem;
+    }
+    .lessons-page > .contact-button{
+        display: none;
+    }
+
+    .lessons-page .contact-button{
+        width: 30rem;
+        height: 6.4rem;
+        font-size: 1.7rem;
+    }
+    .lessons-page .contact-button svg{
+        height: 5.4rem;
+        width: 5.4rem;
+        padding: 4%;
+    }
+    .pills-list ul li:first-child{
+        order: 0;
+    }
+    .pills-list ul li:nth-child(2){
+        order: 2;
+    }
+    .pills-list ul li:nth-child(3){
+        order: 3;
+    }
+    .pills-list ul li:nth-child(4){
+        order: 5;
+    }
+    .pills-list ul li:nth-child(5){
+        order: 1;
+    }
+    .pills-list ul li:nth-child(6){
+        order: 4;
+    }
+    .pills-list ul li:nth-child(7){
+        order: 6;
+    }
+
+
+
+
+    .lessons-page .contact-button svg path{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .lessons-page header h1{
+        font-size: 8rem;
+        line-height: 6rem;
+    }
+    .lessons-page header p{
+        font-size: 2.5rem;
+    }
+    .lessons-page .pills-list ul li{
+        padding: 2.5rem 4.6rem;
+        font-size: 2rem;
+    }
+    .lessons-page .pills-list ul .button-pill .contact-button{
+        width: 27rem;
+        width: 30rem;
+        height: 7.4rem;
+        font-size: 2rem;
+    }
+    .lessons-page .contact-button svg{
+        height: 6.4rem;
+        width: 6.4rem;
+        padding: 5%;
+    }
+    .lessons-page .contact-button svg path{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .lessons-page header h1{
+        font-size: 10rem;
+        line-height: 7rem;
+    }
+    .lessons-page header p{
+        font-size: 3rem;
+    }
+    .lessons-page .pills-list ul li{
+        padding: 3rem 5rem;
+        font-size: 2.5rem;
+    }
+    .lessons-page .pills-list ul .button-pill .contact-button{
+        width: 35rem;
+        height: 8.4rem;
+        font-size: 2.5rem;
+    }
+    .lessons-page .contact-button svg{
+        height: 7.4rem;
+        width: 7.4rem;
+        padding: 6%;
+    }
+    .lessons-page .contact-button svg path{
+        width: 6rem;
+        height: 6rem;
+    }
+}

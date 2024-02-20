@@ -65,37 +65,37 @@ h2 {
     position: absolute;
     top: 0%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
     background-color: var(--grey-abuk);
-    animation: appear-letter 1s forwards;
+    animation: appear-letter 0.1s forwards;
 }
 /* Animaciones individuales para las letras */
 .letter-A {
-    animation-delay: 0s,4s;
+    animation-delay: 0s,2s;
     animation-name: appear-letter, move-letter-A;
 }
 
   .letter-B {
-    animation-delay: 1s,4s;
+    animation-delay: 0.5s,2s;
     animation-name: appear-letter, move-letter-B;
   }
 
   .letter-U {
-    animation-delay: 2s,4s;
+    animation-delay: 1s,2s;
     animation-name: appear-letter, move-letter-U;
   }
 
   .letter-K {
-    animation-delay: 3s,4s;
+    animation-delay: 1.5s,2s;
     animation-name: appear-letter, move-letter-K;
   }
 
   /* Ajustar los tiempos para cuando comienzan las animaciones de movimiento */
 .letter-A, .letter-B, .letter-U, .letter-K {
     animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+    animation-duration: 0.1s, 1.5s;
 }
 
-  @media (min-width: 540px){
+@media (min-width: 540px){
     .home-page h2{
         height: 20rem;
     }
@@ -107,7 +107,7 @@ h2 {
     .letter {
         width: 22rem;
     }
-  }
+}
 
     @media (min-width: 790px){
         .home-page h2{
