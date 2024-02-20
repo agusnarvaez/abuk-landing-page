@@ -1,16 +1,20 @@
+.contact-page{
+    padding: 3% 2.5rem;
+    gap: 3rem;
+}
 .contact-page header{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 60vh;
-    padding: 3% 2.5rem;
 }
 
 .contact-page header img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .contact-page header h1{
@@ -25,27 +29,37 @@
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
+    .contact-page{
+        flex-direction: row;
+    }
     .contact-page header{
         width: 45%;
         padding-top: 10rem;
         height: 100%;
+        justify-content: flex-start;
     }
     .contact-page header h1{
-        left: 2.5rem;
+        left: 0rem;
         color: var(--green-abuk);
-        width: 150%;
+        width: 100vw;
         font-size: 6rem;
         line-height: 5rem;
+    }
+    .contact-page header img{
+        width: 90%;
     }
 }
 
 @media (min-width: 1000px) {
+    .contact-page{
+        padding: 1% 2.5rem;
+    }
     .contact-page header{
         padding-top: 12rem;
     }
     .contact-page header h1{
-        font-size: 7rem;
+        font-size: 8rem;
         line-height: 6rem;
     }
 }

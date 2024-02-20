@@ -1,0 +1,114 @@
+.contact-form-container,
+.contact-form-container .inputs-container,
+.contact-form-container .inputs-container li{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.contact-form-container .inputs-container{
+    gap: 2rem;
+}
+
+.contact-form-container .inputs-container li{
+    gap: 1rem;
+}
+
+.contact-form-container .inputs-container li label,
+.contact-form-container .inputs-container li input,
+.contact-form-container .inputs-container li select,
+.contact-form-container .inputs-container li textarea,
+.contact-form-container button{
+    width: 100%;
+    background-color: var(--grey-abuk);
+    font-size: 1.5rem;
+    color: var(--green-abuk);
+    border: none;
+}
+.contact-form-container .inputs-container li input,
+.contact-form-container .inputs-container li select,
+.contact-form-container .inputs-container li textarea{
+    outline: none;
+    border-bottom: 1px solid var(--green-abuk);
+    padding: 1rem;
+}
+.contact-form-container .inputs-container li textarea{
+    resize: none;
+    height: 15rem;
+}
+
+.contact-form-container .inputs-container li input:focus,
+.contact-form-container .inputs-container li select:focus,
+.contact-form-container .inputs-container li textarea:focus{
+    border-width: 2px;
+}
+
+.contact-form-container .inputs-container .contact-error{
+    color: var(--danger-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-form-container button{
+    width: auto;
+    padding: 1.2rem 5rem;
+    font-weight: 700;
+    border: 1px solid var(--green-abuk);
+    border-radius: 50rem;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: transform,background-color 0.3s ease-in-out;
+}
+
+.contact-form-container button:active{
+    transform: scale(0.9);
+}
+
+
+@media (min-width: 700px) {
+    .contact-form-container{
+        padding: 10rem 0rem 0% 0rem;
+        width: 55%;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 5rem;
+    }
+    .contact-form-container .inputs-container{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0;
+        row-gap: 2rem;
+    }
+    .contact-form-container .inputs-container li{
+        width: 48%;
+
+    }
+    .contact-form-container .inputs-container li:last-child,
+    .contact-form-container .inputs-container li:nth-child(5){
+        width: 100%;
+    }
+    .contact-form-container .inputs-container li textarea{
+        height: 10rem;
+    }
+    .contact-form-container button{
+        font-size: 2rem;
+        padding: 1.2rem 8rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contact-form-container{
+        padding: 12rem 0rem 0% 0rem;
+    }
+    .contact-form-container .inputs-container{
+        row-gap: 5rem;
+    }
+    .contact-form-container button:hover{
+        background-color: var(--green-abuk);
+        color: var(--grey-abuk);
+    }
+
+}
