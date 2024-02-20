@@ -11,6 +11,6 @@ describe('Contact Component', () => {
   })
 
   test('should render Contact component', () => {
-    expect(screen.getByText('Contact')).toBeDefined()
+    expect(screen.getByText("Let's keep in touch")).toBeDefined()
   })
 })

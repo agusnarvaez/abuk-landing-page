@@ -10,7 +10,7 @@ describe('ContactForm Component', () => {
     )
   })
 
-  /* test('should render Contact component', () => {
-    expect(screen.getByText('Contact')).toBeDefined()
-  }) */
+  test('should render Contact component', () => {
+    expect(screen.getByText('Enviar')).toBeDefined()
+  })
 })
