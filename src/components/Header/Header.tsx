@@ -28,7 +28,7 @@ export default function Header({theme,path}:HeaderProps) {
   return (
     <header data-testid='main-header' className={`main-header flex-box ${theme} ${isHome()}`}>
       <main className={`flex-box ${theme}`}>
-        <Link data-testid='page-title' onClick={closeHeader} to='/'>ABUK</Link>
+        <Link title='Home' data-testid='page-title' onClick={closeHeader} to='/'>ABUK</Link>
         <button
           data-testid='burger-button'
           onClick={toggleHeader} className={`burguer-button ${show?'show':""}`} type='button'><div></div></button>
@@ -38,16 +38,16 @@ export default function Header({theme,path}:HeaderProps) {
       className={`flex-box ${show?'show':""}`}>
         <ul className='flex-box'>
           <li>
-            <NavLink onClick={closeHeader} to="/about">ABOUT ME</NavLink>
+            <NavLink title='About' onClick={closeHeader} to="/about">ABOUT ME</NavLink>
           </li>
           <li>
-            <NavLink onClick={closeHeader} to="/lessons">PRODUCT LESSONS</NavLink>
+            <NavLink title='Production Lessons' onClick={closeHeader} to="/lessons">PRODUCT LESSONS</NavLink>
           </li>
           <li>
-            <NavLink onClick={closeHeader} to="/services">MIX & MASTERING</NavLink>
+            <NavLink title='Mix & Mastering' onClick={closeHeader} to="/services">MIX & MASTERING</NavLink>
           </li>
           <li>
-            <NavLink onClick={closeHeader} to="/contact">CONTACT & BOOKING</NavLink>
+            <NavLink title='Contact' onClick={closeHeader} to="/contact">CONTACT & BOOKING</NavLink>
           </li>
         </ul>
       </nav>

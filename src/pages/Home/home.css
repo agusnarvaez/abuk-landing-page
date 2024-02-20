@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: center;
 }
-.home-page h2{
+.home-page h1{
     width: 100%;
     height: 10rem;
 }
-.home-page h2 *{
+.home-page h1 *{
     font-size: 10rem;
     width: 7rem;
     line-height: 10rem;
@@ -55,7 +55,7 @@
     }
 }
 
-h2 {
+h1 {
     position: relative;
 }
 .letter {
@@ -96,10 +96,10 @@ h2 {
 }
 
 @media (min-width: 540px){
-    .home-page h2{
+    .home-page h1{
         height: 20rem;
     }
-    .home-page h2 *{
+    .home-page h1 *{
         font-size: 20rem;
         width: 14rem;
         line-height: 20rem;
@@ -110,10 +110,10 @@ h2 {
 }
 
     @media (min-width: 790px){
-        .home-page h2{
+        .home-page h1{
             height: 30rem;
         }
-        .home-page h2 *{
+        .home-page h1 *{
             font-size: 30rem;
             width: 21rem;
             line-height: 30rem;
@@ -124,10 +124,10 @@ h2 {
     }
 
     @media (min-width: 1024px){
-        .home-page h2{
+        .home-page h1{
             height: 40rem;
         }
-        .home-page h2 *{
+        .home-page h1 *{
             font-size: 40rem;
             width: 28rem;
             line-height: 40rem;

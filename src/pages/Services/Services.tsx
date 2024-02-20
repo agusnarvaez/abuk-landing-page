@@ -2,6 +2,7 @@ import './services.css'
 import ServiceCard from "src/components/ServiceCard/ServiceCard"
 import img from 'src/assets/backgrounds/mix-and-mastering.webp'
 import { Link } from 'react-router-dom'
+import HelmetData from 'src/components/HelmetData'
 export default function Services() {
   const services = [
     {
@@ -60,8 +61,16 @@ export default function Services() {
       ]
     }
   ]
+  const metaData = {
+    title: "Mix and Mastering Services for your music",
+    description: "We offer personalized mix and mastering services for your music. We can help you to get the best sound for your tracks. We work with all genres.",
+    keywords: "Abuk, music, production, electronic, sound design, mixdown, arrangement, business",
+    canonical: "https://abuk.com/services"
+  }
+
   return (
     <main className="page-container services-page">
+      <HelmetData metaData={metaData}/>
       <section className="prices flex-box">
         <h1>Mix & Mastering</h1>
         <ul className='flex-box'>
@@ -76,7 +85,7 @@ export default function Services() {
 
       <section className="preparation flex-box">
 
-        <img src={img} alt="Mix and Mastering image" />
+        <img src={img} alt="Mix and Mastering image" title='Mix and Mastering' />
         <div className="info flex-box">
           <h2>How to prepare your stems:</h2>
           <ul className='flex-box'>

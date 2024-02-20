@@ -11,21 +11,21 @@ export default function Footer({theme}:FooterProps) {
       <h2>ABUK</h2>
       <nav className='flex-box'>
         <ul className='flex-box'>
-          <li><Link data-testid='footer-link' to="services">Mix & Mastering</Link></li>
-          <li><Link data-testid='footer-link' to="lessons">Product Lessons</Link></li>
-          <li><Link data-testid='footer-link' to="about">Sobre Mi</Link></li>
-          <li><Link data-testid='footer-link' to="contact">Reservá</Link></li>
+          <li><Link title='Mix & mastering' data-testid='footer-link' to="services">Mix & Mastering</Link></li>
+          <li><Link title='Product Lessons' data-testid='footer-link' to="lessons">Product Lessons</Link></li>
+          <li><Link title='About Me' data-testid='footer-link' to="about">Sobre Mi</Link></li>
+          <li><Link title='Contact & Booking' data-testid='footer-link' to="contact">Reservá</Link></li>
         </ul>
       </nav>
 
       <ul className='footer-socials flex-box'>
-        <li><a data-testid='social-link' className='fa fa-instagram' href='https://www.instagram.com/abukmusic/' rel='noreferrer' target='_blank'></a></li>
-        <li><a data-testid='social-link' className='fa fa-facebook' href='https://www.instagram.com/abukmusic/' rel='noreferrer' target='_blank'></a></li>
-        <li><a data-testid='social-link' className='fa fa-spotify' href='https://open.spotify.com/artist/4kYAGDsAQjBYuWNNBJNnNv?si=o2D5zzBeRnya8EdJM1kP8w' rel='noreferrer' target='_blank'></a></li>
+        <li><a title='Abuk Instagram' data-testid='social-link' className='fa fa-instagram' href='https://www.instagram.com/abukmusic/' rel='noreferrer' target='_blank'></a></li>
+        <li><a title='Abuk Facebook' data-testid='social-link' className='fa fa-facebook' href='https://www.instagram.com/abukmusic/' rel='noreferrer' target='_blank'></a></li>
+        <li><a title='My music' data-testid='social-link' className='fa fa-spotify' href='https://open.spotify.com/artist/4kYAGDsAQjBYuWNNBJNnNv?si=o2D5zzBeRnya8EdJM1kP8w' rel='noreferrer' target='_blank'></a></li>
       </ul>
 
       <section className='bapps-logo flex-box'>
-        <img src={logoBapps} alt='Bapps Logo' />
+        <img src={logoBapps} alt='Bapps Logo' title='Logo Bapps' />
       </section>
     </footer>
   )

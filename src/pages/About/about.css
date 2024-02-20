@@ -20,7 +20,7 @@
     right: 0;
     top: 0;
 }
-.about-page .banner h2{
+.about-page .banner h1{
     width: 100%;
     text-align: start;
     font-size: 10rem;
@@ -47,7 +47,7 @@
         width: 45%;
         height: auto;
     }
-    .about-page .banner h2{
+    .about-page .banner h1{
         font-size: 11rem;
         line-height: 7rem;
         position: absolute;
@@ -68,7 +68,7 @@
 }
 
 @media (min-width: 1125px){
-    .about-page .banner h2{
+    .about-page .banner h1{
         font-size: 13rem;
         line-height: 10rem;
     }

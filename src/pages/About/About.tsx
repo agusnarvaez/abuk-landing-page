@@ -1,11 +1,20 @@
 import './about.css'
 import image from 'src/assets/backgrounds/about.webp'
+import HelmetData from 'src/components/HelmetData'
+
 export default function About() {
+  const metaData ={
+    title: "Abuk, Electronic Music Producer and DJ",
+    description: "Argentinian DJ and Producer, born on July 2nd 1997 in Buenos Aires, is an outstanding artist who masterfully fuses the roots of melodic house & techno, creating a unique sound experience that captivates his audience. Based in Spain (Barcelona).",
+    keywords: "Abuk, music, production, electronic, sound design, mixdown, arrangement, business",
+    canonical: "https://abuk.com/about"
+  }
   return (
     <main className="page-container about-page flex-box">
+      <HelmetData metaData={metaData}/>
       <section className='banner'>
         <img src={image} alt='Imagen Abuk'/>
-        <h2>Abuk</h2>
+        <h1>Abuk</h1>
       </section>
       <section className='info flex-box'>
         <p>

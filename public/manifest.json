@@ -1,0 +1,15 @@
+{
+  "short_name": "ABUK",
+  "name": "ABUK",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "156x177"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#DCDCDC",
+  "background_color": "#DCDCDC"
+}

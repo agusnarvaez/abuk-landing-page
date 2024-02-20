@@ -1,9 +1,20 @@
-import { Link } from "react-router-dom";
 import './lessons.css'
 
+import { Link } from "react-router-dom"
+
+import HelmetData from 'src/components/HelmetData'
+
+
 export default function Lessons() {
+  const metaData ={
+    title: "Learn music production and mixing",
+    description: "We offer personalized 1:1 presential / remote lessons that cover the whole process behind electronic music production. Some topics we cover: Ableton use, Mixdown and advanced processing, Music Business and how to aproach Labels, How to go from a loop to a finished track, Arrengment, Sound design.",
+    keywords: "Abuk, lessons, music, production, electronic, sound design, mixdown, arrangement, business",
+    canonical: "https://abuk.com/lessons"
+  }
   return (
     <main className="page-container lessons-page">
+      <HelmetData metaData={metaData}/>
       <header className="flex-box">
         <h1>Start learning with us</h1>
         <p>
